@@ -10,7 +10,7 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
+import sys, os, time
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -27,6 +27,9 @@ needs_sphinx = '1.0'
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.intersphinx', 'sphinx.ext.ifconfig']
 
 # Add any paths that contain templates here, relative to this directory.
+templates_path = ['html']
+
+# Add any paths that contain templates here, relative to this directory.
 #templates_path = ['templates']
 
 # The suffix of source filenames.
@@ -36,11 +39,15 @@ source_suffix = '.rst'
 #source_encoding = 'utf-8-sig'
 
 # The master toctree document.
-master_doc = 'index'
+master_doc = 'source/index'
 
 # General information about the project.
 project = u'Drift'
-copyright = u'2010, Collab'
+description = 'Locomotion without a goal'
+url = u'http://dev.collab.com'
+copyright = "Copyright &#169; 2003-%s <a href='%s'>%s</a> All rights reserved." % (
+            time.strftime('%Y'), url, 'Collab')
+
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -48,6 +55,7 @@ copyright = u'2010, Collab'
 #
 # The short X.Y version.
 version = '1.0'
+
 # The full version, including alpha/beta/rc tags.
 release = '1.0'
 
@@ -102,7 +110,7 @@ html_theme_path = ['themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = '%s - %s' % (project, description)
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
