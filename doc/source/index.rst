@@ -16,7 +16,7 @@ The code is hosted at Github: http://github.com/collab-project/drift.
 Dependencies
 ------------
 
-Drift uses software created by the Open Source community, such as the HTML rendering engine WebKit,
+Drift uses software created by the Open Source community, such as the HTML rendering engine WebKit_,
 and returns its enhancements to the community.
 
 
@@ -28,7 +28,7 @@ Tested on `OS X 10.6.4`_.
 GTK+
 ----
 
-GTK+ is a toolkit for creating graphical user interfaces which boasts cross platform compatibility
+`GTK+`_ is a toolkit for creating graphical user interfaces which boasts cross platform compatibility
 and an easy to use API. GTK+ it is written in C, but has bindings to many other popular programming
 languages such as C++, Python and C# among others.
 
@@ -39,7 +39,7 @@ languages such as C++, Python and C# among others.
 | `GTK+`_                 | Toolkit for creating cross  | 2.20.1         | N/A               | `LGPL 2.1`_             |
 |                         | platform user interfaces.   |                |                   |                         |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+
-| GLib_                   | Provides data structure     | 2.24.2         | N/A               | `LGPL 2.1`_             |
+| GLib_                   | Provides data structure     | 2.25.14        | N/A               | `LGPL 2.1`_             |
 |                         | handling for C, portability |                |                   |                         |
 |                         | wrappers and interfaces for |                |                   |                         |
 |                         | such run-time functionality |                |                   |                         |
@@ -69,7 +69,7 @@ languages such as C++, Python and C# among others.
 |                         | commonly used for writing   |                |                   |                         |
 |                         | multilingual programs.      |                |                   |                         |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+
-| Fontconfig_             | Font customization and      | 2.8            | 2.6               | MIT_                    |
+| Fontconfig_             | Font customization and      | 2.8.0          | 2.6               | MIT_                    |
 |                         | configuration.              |                |                   |                         |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+
 | pkg-config_             | Provides a unified interface| 0.25           | 0.23              | `GPL 2.0`_ or later     |
@@ -97,7 +97,6 @@ languages such as C++, Python and C# among others.
 |                         | libxml2_.                   |                |                   |                         |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+
 
-XXX: what about gtk-doc?
 
 Runtimes
 --------
@@ -110,7 +109,7 @@ Runtimes
 |                         | design philosophy           |                |                   |                         |
 |                         | emphasizes code readability.|                |                   |                         |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+
-| Java_                   | Programming language that   | N/A            | ?                 | `GPL 3.0`_              |
+| Java_                   | Programming language that   | N/A            | 1.6.0_20          | `GPL 3.0`_              |
 |                         | derives much of its syntax  |                |                   |                         |
 |                         | from C and C++ but has a    |                |                   |                         |
 |                         | simpler object model and    |                |                   |                         |
@@ -120,6 +119,36 @@ Runtimes
 |                         | proprietary multimedia and  |                |                   |                         |
 |                         | application player.         |                |                   |                         |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+
+| WebKit_                 | Open source web browser     | 1.3.3          | ?                 | `LGPL 2.1`_/BSD_        |
+|                         | engine.                     |                |                   |                         |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+
+
+
+WebKit
+------
+
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| Name                    | Description                 | App Version    | System Version(s) | License                 | Dependencies                     |
++=========================+=============================+================+===================+=========================+==================================+
+| Enchant_                | Unifies access to the       | 1.6.0          | N/A               | `GPL 2.0`_ or later     | Aspell_ (optional)               |
+|                         | various existing		|                |                   |                         |                                  |	
+|                         | spell-checker software.     |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| Xt_                     | X Toolkit Intrinsics, an    | 1.0.8          | ?                 | `GPL 2.0`_ or later     |                                  |
+|                         | abstract widget library upon|                |                   |                         |                                  |
+|                         | which other toolkits        |                |                   |                         |                                  |
+|                         | are based.		        |                |                   |                         |                                  |	
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| libsoup_                | X Toolkit Intrinsics, an    | 2.31.90        | ?                 | `GPL 2.0`_ or later     | libgcrypt_, GnuTLS_              |
+|                         | abstract widget library upon|                |                   |                         |                                  |
+|                         | which other toolkits        |                |                   |                         |                                  |
+|                         | are based.		        |                |                   |                         |                                  |	
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| GeoClue_                | X Toolkit Intrinsics, an    | 0.12           | ?                 | `LGPL 2.1`_ or later    | `D-Bus`_, `D-Bus-glib`_,         |
+|                         | abstract widget library upon|                |                   |                         | gconf_ 2.28.1                    |
+|                         | which other toolkits        |                |                   |                         |                                  |
+|                         | are based.		        |                |                   |                         |                                  |	
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 
 Python
 ------
@@ -130,7 +159,7 @@ Python
 | PyAMF_                  | Provides Action Message     | 0.6            | N/A               | MIT_                    |                                  |
 |                         | Format (AMF) support for    |                |                   |                         |                                  |
 |                         | Python that is compatible   |                |                   |                         |                                  |
-|                         | with the Adobe Flash Player.|                |                   |                         |                                  |
+|                         | with the `Flash Player`_.   |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 | Pylons_                 | Lightweight web framework   | 1.0            | N/A               | BSD_                    |                                  |
 |                         | emphasizing flexibility and |                |                   |                         |                                  |
@@ -153,21 +182,28 @@ Python
 |                         | internationalizing Python   |                |                   |                         |                                  |
 |                         | applications.               |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| PyGtk_                  | Python binding for the      | 2.21           | N/A               | `LGPL 2.1`_             | PyGObject_, PyCairo_             |
+| PyGtk_                  | Python binding for the      | 2.21.0         | N/A               | `LGPL 2.1`_             | PyGObject_, PyCairo_             |
 |                         | `GTK+`_ library.            |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| PyGObject_              | Python binding for the GTK+ | 2.21.5         | N/A               | `LGPL 2.1`_             | GLib_, PyCairo_                  |
-|                         | library.                    |                |                   |                         |                                  |
+| PyGObject_              | Python binding for the      | 2.21.5         | N/A               | `LGPL 2.1`_             | GLib_, PyCairo_                  |
+|                         | GObject library.            |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| PyCairo_                | Python binding for the GTK+ | 1.8.10         | N/A               | `LGPL 2.1`_             | 				  |
-|                         | library.                    |                |                   |                         |                                  |
+| PyCairo_                | Python binding for the      | 1.8.10         | N/A               | `LGPL 2.1`_/`MPL 1.1`_  | 				  |
+|                         | Cairo_ library.             |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 | PyWebKitGtk_            | Python binding for the      | 1.1.8          | N/A               | `LGPL 3.0`_             | libxslt_, PyGTK_, WebKit_        |
-|                         | WebKitGtk rendering engine. |                |                   |                         |                                  |
+|                         | `GTK+`_version of the       |                |                   |                         |                                  |
+|                         | WebKit_ rendering engine.   |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 
-Note: glib: `./configure --disable-glibtest --without-ffi --disable-introspection`
-Note: pygtk: `export PYTHON=/usr/local/bin/python2.7`
+Notes
+-----
+
+- GLib_: ``./configure --disable-glibtest --without-ffi --disable-introspection``
+- PyGtk_: ``export PYTHON=/usr/local/bin/python2.7``
+- WebKit_: ``WebKitTools/Scripts/build-webkit --gtk --with-hildon=no --enable-introspection=no --with-target=quartz``
+- libgcrypt: ``./configure --disable-asm``
+- XXX: what about gtk-doc?
 
 References
 ----------
@@ -184,6 +220,11 @@ References
 - http://osdir.com/ml/pyjamas-dev/2010-03/msg00066.html
 - http://www.apple.com/opensource/
 - http://git.gnome.org/browse/pygobject/tree/README
+- https://trac.webkit.org/wiki/BuildingGtk
+- http://live.gnome.org/WebKitGtk
+- http://trac.webkit.org/wiki/HackingGtk
+- http://janalonzo.wordpress.com/2009/09/16/building-gtk-on-snow-leopard-notes
+- http://www.aclevername.com/articles/python-webgui
 
 
 .. _OS X 10.6.4: 		http://www.opensource.apple.com/release/mac-os-x-1064/
@@ -214,6 +255,16 @@ References
 .. _PyGObject:			http://www.pygtk.org
 .. _PyCairo:			http://cairographics.org/pycairo
 .. _WebKit:			http://webkit.org
+.. _Enchant:			http://abisource.com/projects/enchant
+.. _Aspell:			http://aspell.net
+.. _Xt:				http://www.x.org/docs/Xt
+.. _libsoup:			http://live.gnome.org/LibSoup
+.. _libgcrypt:			http://www.gnupg.org
+.. _GnuTLS:			http://www.gnu.org/software/gnutls
+.. _GeoClue:			http://www.freedesktop.org/wiki/Software/GeoClue
+.. _D-Bus-glib:			http://www.freedesktop.org/wiki/Software/DBusBindings
+.. _D-Bus:			http://www.freedesktop.org/wiki/Software/dbus
+.. _gconf:			http://projects.gnome.org/gconf
 .. _Flash Player:		http://adobe.com/products/flashplayer
 .. _Flash Player EULA:		http://www.adobe.com/products/eulas/pdfs/PlatformClients_PC_WWEULA_Combined_20100108_1657.pdf
 .. _LGPL 2.1:			http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
