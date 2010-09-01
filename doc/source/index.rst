@@ -56,14 +56,19 @@ Python
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 | Name                    | Description                 | App Version    | System Version(s) | License                 | Dependencies                     |
 +=========================+=============================+================+===================+=========================+==================================+
-| PyAMF_                  | Provides Action Message     | 0.6            | N/A               | MIT_                    |                                  |
+| PyAMF_                  | Provides Action Message     | 0.6            | N/A               | MIT_                    | SQLAlchemy_                      |
 |                         | Format (AMF) support for    |                |                   |                         |                                  |
 |                         | Python that is compatible   |                |                   |                         |                                  |
 |                         | with the `Flash Player`_.   |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| Pylons_                 | Lightweight web framework   | 1.0            | N/A               | BSD_                    |                                  |
-|                         | emphasizing flexibility and |                |                   |                         |                                  |
-|                         | rapid development.          |                |                   |                         |                                  |
+| Pylons_                 | Lightweight web framework   | 1.0            | N/A               | BSD_                    | Genshi_, Routes_, WebHelpers_,   |
+|                         | emphasizing flexibility and |                |                   |                         | Beaker_, Paste_, PasteDeploy_,   |
+|                         | rapid development.          |                |                   |                         | PasteScript, FormEncode_,        |
+|                         |                             |                |                   |                         | simplejson_, decorator, nose_,   |
+|                         |                             |                |                   |                         | Mako_, WebOb_, WebError_,        |
+|                         |                             |                |                   |                         | WebTest_, Tempita_, MarkupSafe_, |
+|                         |                             |                |                   |                         | `repoze.bfg.mako`_, SQLAlchemy_, |
+|                         |                             |                |                   |                         | `repoze.bfg`_                    |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 | SQLAlchemy_             | SQL toolkit and Object      | 0.6.3          | N/A               | MIT_                    |                                  |
 |                         | Relational Mapper.          |                |                   |                         |                                  |
@@ -101,6 +106,23 @@ References
 .. _Pylons:			http://pylonshq.com
 .. _SQLAlchemy:			http://sqlachemy.org
 .. _Genshi:			http://genshi.edgewall.org
+.. _Routes:			http://routes.groovie.org
+.. _WebHelpers:			http://webhelpers.groovie.org
+.. _Beaker:			http://beaker.groovie.org
+.. _Paste:			http://pythonpaste.org
+.. _PasteDeploy:		http://pythonpaste.org/deploy
+.. _PasteScript:		http://pythonpaste.org/script
+.. _WebOb:			http://pythonpaste.org/webob
+.. _FormEncode:			http://formencode.org
+.. _simplejson:			http://code.google.com/p/simplejson
+.. _nose:			http://code.google.com/p/python-nose
+.. _Mako:			http://www.makotemplates.org
+.. _WebError:			http://pypi.python.org/pypi/WebError
+.. _WebTest:			http://pythonpaste.org/webtest
+.. _Tempita:			http://pythonpaste.org/tempita
+.. _MarkupSafe:			http://pypi.python.org/pypi/MarkupSafe
+.. _repoze.bfg:			http://bfg.repoze.org
+.. _repoze.bfg.mako:		http://pypi.python.org/pypi/repoze.bfg.mako
 .. _repoze.what:		http://what.repoze.org
 .. _Babel:			http://babel.edgewall.org
 .. _Qt:				http://qt.nokia.com
