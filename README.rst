@@ -1,4 +1,4 @@
 Drift
 =====
 
-See http://dev.collab.com.
+See doc/ for more info.
