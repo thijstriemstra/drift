@@ -66,9 +66,8 @@ Python
 |                         | emphasizing flexibility and |                |                   |                         | Beaker_, Paste_, PasteDeploy_,   |
 |                         | rapid development.          |                |                   |                         | PasteScript_, FormEncode_,       |
 |                         |                             |                |                   |                         | simplejson_, decorator, nose_,   |
-|                         |                             |                |                   |                         | Mako_, WebOb_, WebError_,        |
+|                         |                             |                |                   |                         | WebOb_, WebError_, SQLAlchemy_,  |
 |                         |                             |                |                   |                         | WebTest_, Tempita_, MarkupSafe_, |
-|                         |                             |                |                   |                         | `repoze.bfg.mako`_, SQLAlchemy_, |
 |                         |                             |                |                   |                         | `repoze.bfg`_, Babel_            |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 | SQLAlchemy_             | SQL toolkit and Object      | 0.6.3          | N/A               | MIT_                    | N/A                              |
@@ -87,6 +86,25 @@ Python
 | `repoze.who`_           | Identification and          | 0.6            | N/A               | BSD_                    | Paste_, `zope.interface`_        |
 |                         | authentication framework for|                |                   |                         |                                  |
 |                         | arbitrary WSGI applications.|                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| WebHelpers_             | Standard function library   | 1.2            | N/A               | BSD_                    | MarkupSafe_                      |
+|                         | for Pylons_.                |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| MarkupSafe_             | Implements a XML/HTML/XHTML | 0.10           | N/A               | BSD_                    | N/A                              |
+|                         | Markup safe string for      |                |                   |                         |                                  |
+|                         | Python.                     |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| FormEncode_             | HTML validation and form    | 1.2.3          | N/A               | PSF_                    | N/A                              |
+|                         | generation package.         |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| Beaker_                 | Library for caching and     | 1.5.4          | N/A               | BSD_                    | N/A                              |
+|                         | sessions in web and         |                |                   |                         |                                  |
+|                         | stand-alone Python          |                |                   |                         |                                  |
+|                         | scripts and applications.   |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| Routes_                 | Python URL recognition and  | 1.12.3         | N/A               | BSD_                    | N/A                              |
+|                         | generation system similar to|                |                   |                         |                                  |
+|                         | the Rails routing system.   |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 | Paste_                  | Tools for using a Web Server| ?              | N/A               | MIT_                    | N/A                              |
 |                         | Gateway Interface stack.    |                |                   |                         |                                  |
@@ -111,7 +129,7 @@ Python
 | Twisted_                | Event-driven networking     | 10.1.0         | ?                 | MIT_                    | `zope.interface`_                |
 |                         | engine written in Python.   |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| PySide_                 | CPython_ bindings for the   | 0.4.1          | N/A               | `LGPL 2.1`_             | ?                                |
+| PySide_                 | CPython_ bindings for the   | 0.4.1          | N/A               | `LGPL 2.1`_             | Qt_                              |
 |                         | Qt_ framework.              |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 
@@ -119,7 +137,7 @@ Python
 References
 ----------
 
-- http://qt.gitorious.org/pyside/pyside-examples/blobs/master/examples/webkit/hellowebkit.py
+- http://doc.trolltech.com/4.6/deployment-mac.html
 - http://www.apple.com/opensource/
 
 
