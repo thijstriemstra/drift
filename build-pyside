@@ -1,0 +1,77 @@
+#!/bin/bash -x
+
+TMPDIR=`pwd`/PYSIDE_TMP
+INSTALLDIR=$TMPDIR/install
+PACKAGEDIR=$TMPDIR/package
+SITEPACKAGESDIR=`python  -c "from distutils import sysconfig; print sysconfig.get_python_lib(1,0)"`
+XDATE=`date +%Y%m%d`
+JOBS=1
+
+function usage() {
+echo -e "\
+Usage: $(basename $0) -[j]
+       -j\tAllow N jobs at once."
+exit -1
+}
+
+while getopts "hj:" OPT; do
+  case $OPT in
+    "h") usage;;
+    "j") JOBS=$OPTARG; [[ $JOBS =~ ^[1-9]+$ ]] || usage;;
+    "?") exit -2;;
+  esac
+done
+
+export DYLD_LIBRARY_PATH=$INSTALLDIR/usr/lib/
+export PATH=$INSTALLDIR/usr/bin:$PATH
+mkdir -p $INSTALLDIR
+
+# ApiExtractor
+cd $TMPDIR
+git clone git://gitorious.org/pyside/apiextractor.git
+cd apiextractor
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=$INSTALLDIR/usr
+make -j$JOBS
+make install
+
+# GeneratorRunner
+cd $TMPDIR
+git clone git://gitorious.org/pyside/generatorrunner.git
+cd generatorrunner
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=$INSTALLDIR/usr
+make -j$JOBS
+make install
+
+# Shiboken
+cd $TMPDIR
+git clone git://gitorious.org/pyside/shiboken.git
+cd shiboken
+SHIBOKEN_MAJOR=`grep -E '^set\(shiboken_MAJOR_VERSION' CMakeLists.txt | awk '{print $2}' | cut -b 2`
+SHIBOKEN_MINOR=`grep -E '^set\(shiboken_MINOR_VERSION' CMakeLists.txt | awk '{print $2}' | cut -b 2`
+SHIBOKEN_MICRO=`grep -E '^set\(shiboken_MICRO_VERSION' CMakeLists.txt | awk '{print $2}' | cut -b 2`
+SHIBOKEN_VERSION=$SHIBOKEN_MAJOR.$SHIBOKEN_MINOR.$SHIBOKEM_MICRO
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=$INSTALLDIR/usr
+make -j$JOBS
+make install
+
+# PySide
+cd $TMPDIR
+git clone git://gitorious.org/pyside/pyside.git
+cd pyside
+PYSIDE_MAJOR=`grep -E '^set\(BINDING_API_MAJOR_VERSION \"' CMakeLists.txt | awk '{print $2}' | cut -b 2`
+PYSIDE_MINOR=`grep -E '^set\(BINDING_API_MINOR_VERSION \"' CMakeLists.txt | awk '{print $2}' | cut -b 2`
+PYSIDE_MICRO=`grep -E '^set\(BINDING_API_MICRO_VERSION \"' CMakeLists.txt | awk '{print $2}' | cut -b 2`
+PYSIDE_VERSION=$PYSIDE_MAJOR.$PYSIDE_MINOR.$PYSIDE_MICRO
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=$INSTALLDIR/usr -DGENERATOR=$INSTALLDIR/usr/bin/shiboken -DALTERNATIVE_QT_INCLUDE_DIR=/Library/Frameworks/ -DSITE_PACKAGE=$INSTALLDIR/$SITEPACKAGESDIR
+make -j$JOBS
+make install
+
+exit 0
