@@ -137,8 +137,13 @@ Python
 References
 ----------
 
+- http://www.qteverywhere.com/wp-content/uploads/2009/04/qt-45-taipei-launch-event_final-set.pdf
+- https://bugs.webkit.org/buglist.cgi?short_desc_type=allwordssubstr&short_desc=&product=WebKit&component=Plug-ins&long_desc_type=allwordssubstr&long_desc=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&field0-0-0=assigned_to&type0-0-0=notequals&value0-0-0=webkit-unassigned@lists.webkit.org&field0-0-1=keywords&type0-0-1=anywords&value0-0-1=QtTriaged&keywords_type=allwords&keywords=Qt&order=Importance
+- http://ubuntuforums.org/showthread.php?t=1316071
 - http://doc.trolltech.com/4.6/deployment-mac.html
+- http://trac.webkit.org/wiki/QtWebKitPlugins
 - http://www.apple.com/opensource/
+- http://code.google.com/p/arora
 
 
 .. _OS X 10.6.4: 		http://www.opensource.apple.com/release/mac-os-x-1064/
