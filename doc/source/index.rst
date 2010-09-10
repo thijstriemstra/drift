@@ -1,19 +1,22 @@
 .. toctree::
    :maxdepth: 2
-   
+
+========
+Overview
+========
+
 This is the documentation for the **Drift** project.
 
 Source
-------
+======
 
 The source code and documentation is hosted at Github: http://github.com/collab-project/drift.
 
 
-Dependencies
-------------
+Components
+==========
 
-Tested on OS X `10.5.8`_ and `10.6.4`_.
-
+This is a list of software dependencies, compiled and tested on OS X `10.5.8`_ and `10.6.4`_.
 
 Runtimes
 --------
@@ -169,12 +172,25 @@ Deployment
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 | Name                    | Description                 | Version        | System Version(s) | License                 | Dependencies                     |
 +=========================+=============================+================+===================+=========================+==================================+
-| py2app_                 | Allows you to make          | 0.5.2          | N/A               | `MIT`_                  | CPython_                         |
-|                         | standalone Mac OS X         |                |                   |                         |                                  |
+| py2app_                 | Allows you to make          | 0.5.2          | ?                 | `MIT`_                  | CPython_, macholib_,             |
+|                         | standalone Mac OS X         |                |                   |                         | modulegraph_                     |
 |                         | application bundles and     |                |                   |                         |                                  |
 |                         | plugins from Python scripts.|                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-
+| macholib_               | Used to analyze and edit    | 1.3.0          | ?                 | `MIT`_                  | CPython_                         |
+|                         | Mach-O headers, the         |                |                   |                         |                                  |
+|                         | executable format used by   |                |                   |                         |                                  |
+|                         | Mac OS X.                   |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| modulegraph_            | Determines a dependency     | 0.8.1          | ?                 |`MIT`_                   | CPython_, altgraph_              |
+|                         | graph between Python modules|                |                   |                         |                                  |
+|                         | primarily by bytecode       |                |                   |                         |                                  |
+|                         | analysis for import         |                |                   |                         |                                  |
+|                         | statements.                 |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| altgraph_               | Python graph (network)      | 0.7.1          | ?                 |`MIT`_                   | CPython_                         |
+|                         | package.                    |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 
 
 References
@@ -182,7 +198,7 @@ References
 
 - https://bugs.webkit.org/buglist.cgi?short_desc_type=allwordssubstr&short_desc=&product=WebKit&component=Plug-ins&long_desc_type=allwordssubstr&long_desc=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&field0-0-0=assigned_to&type0-0-0=notequals&value0-0-0=webkit-unassigned@lists.webkit.org&field0-0-1=keywords&type0-0-1=anywords&value0-0-1=QtTriaged&keywords_type=allwords&keywords=Qt&order=Importance
 - http://ubuntuforums.org/showthread.php?t=1316071
-- http://doc.trolltech.com/4.6/deployment-mac.html
+- http://doc.trolltech.com/4.7-snapshot/deployment-mac.html
 - http://lists.openbossa.org/pipermail/pyside/2010-September/001005.html
 - http://blog.forwardbias.in/2009/12/flash-in-qgraphicsview.html
 - http://trac.webkit.org/wiki/QtWebKitPlugins
@@ -222,6 +238,9 @@ References
 .. _repoze.who:			http://docs.repoze.org/who
 .. _Twisted:			http://twistedmatrix.com
 .. _py2app:			http://pypi.python.org/pypi/py2app
+.. _macholib:			http://bitbucket.org/ronaldoussoren/macholib
+.. _modulegraph:		http://bitbucket.org/ronaldoussoren/modulegraph
+.. _altgraph:			http://bitbucket.org/ronaldoussoren/altgraph
 .. _Babel:			http://babel.edgewall.org
 .. _Qt:				http://qt.nokia.com
 .. _PySide:			http://www.pyside.org
