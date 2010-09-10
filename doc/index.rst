@@ -1,3 +1,9 @@
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   deployment/index.rst
+   components/index.rst
 
 
 Overview
@@ -196,20 +202,12 @@ References
 
 - https://bugs.webkit.org/buglist.cgi?short_desc_type=allwordssubstr&short_desc=&product=WebKit&component=Plug-ins&long_desc_type=allwordssubstr&long_desc=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&field0-0-0=assigned_to&type0-0-0=notequals&value0-0-0=webkit-unassigned@lists.webkit.org&field0-0-1=keywords&type0-0-1=anywords&value0-0-1=QtTriaged&keywords_type=allwords&keywords=Qt&order=Importance
 - http://ubuntuforums.org/showthread.php?t=1316071
-- http://doc.trolltech.com/4.7-snapshot/deployment-mac.html
 - http://lists.openbossa.org/pipermail/pyside/2010-September/001005.html
 - http://blog.forwardbias.in/2009/12/flash-in-qgraphicsview.html
 - http://trac.webkit.org/wiki/QtWebKitPlugins
-- http://www.apple.com/opensource/
 - http://qt.nokia.com/developer/changes
 - http://code.google.com/p/arora
 
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   deployment/index.rst
 
 
 .. _10.6.4: 			http://www.opensource.apple.com/release/mac-os-x-1064/

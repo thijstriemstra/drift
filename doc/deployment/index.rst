@@ -5,6 +5,6 @@ Deployment
 Platform-specific documentation for application deployment.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    osx.rst
