@@ -158,9 +158,23 @@ Bindings
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 | Name                    | Description                 | App Version    | System Version(s) | License                 | Dependencies                     |
 +=========================+=============================+================+===================+=========================+==================================+
-| PySide_                 | Python bindings for the     | 0.4.1          | N/A               | `LGPL 2.1`_             | Qt_                              |
+| PySide_                 | Python bindings for the     | 0.4.1          | N/A               | `LGPL 2.1`_             | CPython_, Qt_                    |
 |                         | Qt_ framework.              |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+
+
+Deployment
+----------
+
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| Name                    | Description                 | Version        | System Version(s) | License                 | Dependencies                     |
++=========================+=============================+================+===================+=========================+==================================+
+| py2app_                 | Allows you to make          | 0.5.2          | N/A               | `MIT`_                  | CPython_                         |
+|                         | standalone Mac OS X         |                |                   |                         |                                  |
+|                         | application bundles and     |                |                   |                         |                                  |
+|                         | plugins from Python scripts.|                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+
 
 
 References
@@ -207,6 +221,7 @@ References
 .. _repoze.what:		http://what.repoze.org
 .. _repoze.who:			http://docs.repoze.org/who
 .. _Twisted:			http://twistedmatrix.com
+.. _py2app:			http://pypi.python.org/pypi/py2app
 .. _Babel:			http://babel.edgewall.org
 .. _Qt:				http://qt.nokia.com
 .. _PySide:			http://www.pyside.org
