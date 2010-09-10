@@ -1,7 +1,5 @@
-.. toctree::
-   :maxdepth: 2
 
-========
+
 Overview
 ========
 
@@ -205,6 +203,13 @@ References
 - http://www.apple.com/opensource/
 - http://qt.nokia.com/developer/changes
 - http://code.google.com/p/arora
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   deployment/index.rst
 
 
 .. _10.6.4: 			http://www.opensource.apple.com/release/mac-os-x-1064/
