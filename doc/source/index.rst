@@ -12,17 +12,8 @@ The source code and documentation is hosted at Github: http://github.com/collab-
 Dependencies
 ------------
 
-Tested on `OS X 10.6.4`_.
+Tested on OS X `10.5.8`_ and `10.6.4`_.
 
-Qt
---
-
-+-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| Name                    | Description                 | App Version    | System Version(s) | License                 | Dependencies                     |
-+=========================+=============================+================+===================+=========================+==================================+
-| Qt_                     | Cross-platform application  | 4.6.0          | N/A               | `LGPL 2.1`_             | N/A                              |
-|                         | and UI framework.		|                |                   |                         |                                  |
-+-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 
 Runtimes
 --------
@@ -46,21 +37,17 @@ Runtimes
 |                         | application player.         |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 
-Python
-------
+
+
+
+User Interface
+--------------
 
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 | Name                    | Description                 | App Version    | System Version(s) | License                 | Dependencies                     |
 +=========================+=============================+================+===================+=========================+==================================+
-| PyAMF_                  | Provides Action Message     | 0.6            | N/A               | MIT_                    | SQLAlchemy_                      |
-|                         | Format (AMF) support for    |                |                   |                         |                                  |
-|                         | Python that is compatible   |                |                   |                         |                                  |
-|                         | with the `Flash Player`_.   |                |                   |                         |                                  |
-+-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| RTMPy_                  | Provides Real-time Messaging| 0.1            | N/A               | MIT_                    | PyAMF_, Twisted_                 |
-|                         | Protocol (RTMP) support for |                |                   |                         |                                  |
-|                         | Python that is compatible   |                |                   |                         |                                  |
-|                         | with the `Flash Player`_.   |                |                   |                         |                                  |
+| Qt_                     | Cross-platform application  | 4.7.0          | N/A               | `LGPL 2.1`_             | N/A                              |
+|                         | and UI framework.		|                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
 | Pylons_                 | Lightweight web framework   | 1.0            | N/A               | BSD_                    | Genshi_, Routes_, WebHelpers_,   |
 |                         | emphasizing flexibility and |                |                   |                         | Beaker_, Paste_, PasteDeploy_,   |
@@ -68,67 +55,109 @@ Python
 |                         |                             |                |                   |                         | simplejson_, decorator, nose_,   |
 |                         |                             |                |                   |                         | WebOb_, WebError_, SQLAlchemy_,  |
 |                         |                             |                |                   |                         | WebTest_, Tempita_, MarkupSafe_, |
-|                         |                             |                |                   |                         | `repoze.bfg`_, Babel_            |
+|                         |                             |                |                   |                         | `repoze.bfg`_, Babel_, CPython_  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| SQLAlchemy_             | SQL toolkit and Object      | 0.6.3          | N/A               | MIT_                    | N/A                              |
-|                         | Relational Mapper.          |                |                   |                         |                                  |
-+-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| Genshi_                 | Provides an integrated set  | 0.6            | N/A               | BSD_                    | N/A                              |
+| Genshi_                 | Provides an integrated set  | 0.6            | N/A               | BSD_                    | CPython_                         |
 |                         | of components for parsing,  |                |                   |                         |                                  |
 |                         | generating, and processing  |                |                   |                         |                                  |
 |                         | HTML, XML or other textual  |                |                   |                         |                                  |
 |                         | content for output          |                |                   |                         |                                  |
 |                         | generation on the web.      |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| `repoze.what`_          | Authorization framework for | 0.6            | N/A               | BSD_                    | Paste_, `repoze.who`_            |
-|                         | WSGI applications.          |                |                   |                         |                                  |
-+-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| `repoze.who`_           | Identification and          | 0.6            | N/A               | BSD_                    | Paste_, `zope.interface`_        |
-|                         | authentication framework for|                |                   |                         |                                  |
-|                         | arbitrary WSGI applications.|                |                   |                         |                                  |
-+-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| WebHelpers_             | Standard function library   | 1.2            | N/A               | BSD_                    | MarkupSafe_                      |
+| WebHelpers_             | Standard function library   | 1.2            | N/A               | BSD_                    |  CPython_, MarkupSafe_           |
 |                         | for Pylons_.                |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| MarkupSafe_             | Implements a XML/HTML/XHTML | 0.10           | N/A               | BSD_                    | N/A                              |
+| MarkupSafe_             | Implements a XML/HTML/XHTML | 0.10           | N/A               | BSD_                    | CPython_                         |
 |                         | Markup safe string for      |                |                   |                         |                                  |
 |                         | Python.                     |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| FormEncode_             | HTML validation and form    | 1.2.3          | N/A               | PSF_                    | N/A                              |
+| FormEncode_             | HTML validation and form    | 1.2.3          | N/A               | PSF_                    | CPython_                         |
 |                         | generation package.         |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| Beaker_                 | Library for caching and     | 1.5.4          | N/A               | BSD_                    | N/A                              |
+| Beaker_                 | Library for caching and     | 1.5.4          | N/A               | BSD_                    | CPython_                         |
 |                         | sessions in web and         |                |                   |                         |                                  |
 |                         | stand-alone Python          |                |                   |                         |                                  |
 |                         | scripts and applications.   |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| Routes_                 | Python URL recognition and  | 1.12.3         | N/A               | BSD_                    | N/A                              |
+| Routes_                 | Python URL recognition and  | 1.12.3         | N/A               | BSD_                    | CPython_                         |
 |                         | generation system similar to|                |                   |                         |                                  |
 |                         | the Rails routing system.   |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| Paste_                  | Tools for using a Web Server| ?              | N/A               | MIT_                    | N/A                              |
+| Paste_                  | Tools for using a Web Server| ?              | N/A               | MIT_                    | CPython_                         |
 |                         | Gateway Interface stack.    |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| PasteDeploy_            | Load, configure, and compose| 1.3.4          | N/A               | MIT_                    | N/A                              |
+| PasteDeploy_            | Load, configure, and compose| 1.3.4          | N/A               | MIT_                    | CPython_                         |
 |                         | WSGI applications/servers.  |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| PasteScript_            | Tools for managing Paste_,  | 1.7.4          | N/A               | MIT_                    | N/A                              |
+| PasteScript_            | Tools for managing Paste_,  | 1.7.4          | N/A               | MIT_                    | CPython_                         |
 |                         | Pylons_, and other packages.|                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| WebOb_                  | Provides objects for HTTP   | 0.9.8          | N/A               | MIT_                    | N/A                              |
-|                         | requests and responses.     |                |                   |                         |                                  |
-+-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| `zope.interface`_       | Provides an implementation  | ?              | ?                 | `ZPL 2.1`_              | N/A                              |
+| `zope.interface`_       | Provides an implementation  | ?              | ?                 | `ZPL 2.1`_              | CPython_                         |
 |                         | of object interfaces for    |                |                   |                         |                                  |
 |                         | Python.                     |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| Babel_                  | Collection of tools for     | 0.9.5          | N/A               | BSD_                    | N/A                              |
+| Babel_                  | Collection of tools for     | 0.9.5          | N/A               | BSD_                    | CPython_                         |
 |                         | internationalizing Python   |                |                   |                         |                                  |
 |                         | applications.               |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
-| Twisted_                | Event-driven networking     | 10.1.0         | ?                 | MIT_                    | `zope.interface`_                |
+
+
+Database
+--------
+
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| Name                    | Description                 | App Version    | System Version(s) | License                 | Dependencies                     |
++=========================+=============================+================+===================+=========================+==================================+
+| SQLAlchemy_             | SQL toolkit and Object      | 0.6.3          | N/A               | MIT_                    | CPython_                         |
+|                         | Relational Mapper.          |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+
+
+Security
+--------
+
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| Name                    | Description                 | App Version    | System Version(s) | License                 | Dependencies                     |
++=========================+=============================+================+===================+=========================+==================================+
+| `repoze.what`_          | Authorization framework for | 0.6            | N/A               | BSD_                    | CPython_ , Paste_, `repoze.who`_ |
+|                         | WSGI applications.          |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| `repoze.who`_           | Identification and          | 0.6            | N/A               | BSD_                    | CPython_, Paste_,                |
+|                         | authentication framework for|                |                   |                         | `zope.interface`_                |
+|                         | arbitrary WSGI applications.|                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+
+
+Networking
+----------
+
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| Name                    | Description                 | App Version    | System Version(s) | License                 | Dependencies                     |
++=========================+=============================+================+===================+=========================+==================================+
+| PyAMF_                  | Provides Action Message     | 0.6            | N/A               | MIT_                    | CPython_, SQLAlchemy_            |
+|                         | Format (AMF) support for    |                |                   |                         |                                  |
+|                         | Python that is compatible   |                |                   |                         |                                  |
+|                         | with the `Flash Player`_.   |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| RTMPy_                  | Provides Real-time Messaging| 0.1            | N/A               | MIT_                    | CPython_, PyAMF_, Twisted_       |
+|                         | Protocol (RTMP) support for |                |                   |                         |                                  |
+|                         | Python that is compatible   |                |                   |                         |                                  |
+|                         | with the `Flash Player`_.   |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| WebOb_                  | Provides objects for HTTP   | 0.9.8          | N/A               | MIT_                    | CPython_                         |
+|                         | requests and responses.     |                |                   |                         |                                  |
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| Twisted_                | Event-driven networking     | 10.1.0         | ?                 | MIT_                    | CPython_, `zope.interface`_      |
 |                         | engine written in Python.   |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+
+
+Bindings
+--------
+
++-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
+| Name                    | Description                 | App Version    | System Version(s) | License                 | Dependencies                     |
++=========================+=============================+================+===================+=========================+==================================+
 | PySide_                 | Python bindings for the     | 0.4.1          | N/A               | `LGPL 2.1`_             | Qt_                              |
 |                         | Qt_ framework.              |                |                   |                         |                                  |
 +-------------------------+-----------------------------+----------------+-------------------+-------------------------+----------------------------------+
@@ -137,22 +166,25 @@ Python
 References
 ----------
 
-- http://www.qteverywhere.com/wp-content/uploads/2009/04/qt-45-taipei-launch-event_final-set.pdf
 - https://bugs.webkit.org/buglist.cgi?short_desc_type=allwordssubstr&short_desc=&product=WebKit&component=Plug-ins&long_desc_type=allwordssubstr&long_desc=&bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&field0-0-0=assigned_to&type0-0-0=notequals&value0-0-0=webkit-unassigned@lists.webkit.org&field0-0-1=keywords&type0-0-1=anywords&value0-0-1=QtTriaged&keywords_type=allwords&keywords=Qt&order=Importance
 - http://ubuntuforums.org/showthread.php?t=1316071
 - http://doc.trolltech.com/4.6/deployment-mac.html
+- http://lists.openbossa.org/pipermail/pyside/2010-September/001005.html
+- http://blog.forwardbias.in/2009/12/flash-in-qgraphicsview.html
 - http://trac.webkit.org/wiki/QtWebKitPlugins
 - http://www.apple.com/opensource/
+- http://qt.nokia.com/developer/changes
 - http://code.google.com/p/arora
 
 
-.. _OS X 10.6.4: 		http://www.opensource.apple.com/release/mac-os-x-1064/
+.. _10.6.4: 			http://www.opensource.apple.com/release/mac-os-x-1064/
+.. _10.5.8:			http://www.opensource.apple.com/release/mac-os-x-1058/
 .. _CPython:			http://python.org
 .. _Java:			http://java.sun.com
 .. _PyAMF:			http://pyamf.org
 .. _RTMPy:			http://rtmpy.org
 .. _Pylons:			http://pylonshq.com
-.. _SQLAlchemy:			http://sqlalchemy.org
+.. _SQLAlchemy:			http://www.sqlalchemy.org
 .. _Genshi:			http://genshi.edgewall.org
 .. _Routes:			http://routes.groovie.org
 .. _WebHelpers:			http://webhelpers.groovie.org
